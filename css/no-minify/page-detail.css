@@ -1,0 +1,30 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: block;
+}
+body {
+  padding-top: 51px;
+}
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #d4d4d4;
+  color: #fff;
+  height: 51px;
+  left: 0;
+  border-bottom: solid 1px #a2a2a2;
+}
+header ul {
+  list-style-type: none;
+}
+header a {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
