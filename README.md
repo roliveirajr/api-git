@@ -21,7 +21,7 @@ Currently supported:
 
 - LiveReload of assets HTTPS
 - Stylus compilation
-- JS and CSS Minification
+- CSS Minification
 
 ### Release History
 
