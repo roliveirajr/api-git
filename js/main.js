@@ -4,7 +4,7 @@
 let buttonSearch = $('#search-profiles button');
 let __campTextSearch = $('#search-profiles input');
 let _pageHome = $('body');
-var dateUser =""
+let dateUser =""
 
 let home = {
 
@@ -55,22 +55,22 @@ let home = {
             type: "GET",
             dataType: 'json',
         }).done(function (data) {
-            var reposValue = data.sort(function (a, b) {
+            let reposValue = data.sort(function (a, b) {
                 return parseFloat(b.stargazers_count) - parseFloat(a.stargazers_count);
             });
 
             home.includeAndOrderby(reposValue);
             
-            var orderBy = function(){
+            let orderBy = function(){
                 $('.order-by a').on('click', function(){
                     if($(this).hasClass('less-stars')){
-                        var reposValue = data.sort(function (a, b) {
+                        let reposValue = data.sort(function (a, b) {
                             return parseFloat(a.stargazers_count) - parseFloat(b.stargazers_count);
                         });
                         home.includeAndOrderby(reposValue);
 
                     }else if($(this).hasClass('more-stars')){
-                        var reposValue = data.sort(function (a, b) {
+                        let reposValue = data.sort(function (a, b) {
                             return parseFloat(b.stargazers_count) - parseFloat(a.stargazers_count);
                         });
                         home.includeAndOrderby(reposValue);
@@ -82,7 +82,7 @@ let home = {
     },
 
     includeAndOrderby: function(reposValue){
-        var repoList = '';
+        let repoList = '';
         $.each(reposValue, function (index, value) {
             console.log(value);
             let stars = value.stargazers_count;
@@ -96,19 +96,19 @@ let home = {
 
 let detail = {
     renderPage: function(){
-        var parametersPage = window.location.search.split('?');
-        var indexDirectore = parametersPage[2]
-        var localDirectore = parametersPage[3]
+        let parametersPage = window.location.search.split('?');
+        let indexDirectore = parametersPage[2]
+        let localDirectore = parametersPage[3]
 
 
-        var urlGetRepo = 'https://api.github.com/users/' + localDirectore + '/repos';
+        let urlGetRepo = 'https://api.github.com/users/' + localDirectore + '/repos';
 
         $.ajax({
             url: urlGetRepo,
             type: "GET",
             dataType: 'json',
         }).done(function (data) {
-            var directore = data[indexDirectore];
+            let directore = data[indexDirectore];
             console.log(directore);
             $('h1.title').html(directore.name);
             $('.stars').html('<b>Stars: </b>' +directore.stargazers_count);
