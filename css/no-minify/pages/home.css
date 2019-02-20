@@ -1,40 +1,43 @@
 .home-page {
-  background-color: color5;
+  background-color: color2;
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  height: 100%;
+}
+#search-profiles {
+  margin-top: 12%;
+  text-align: center;
 }
 #search-profiles h1 {
-  color: color2;
+  color: color5;
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 10px;
 }
 #search-profiles input {
   padding: 10px 10px 10px 25px;
-  border: solid 1px color1;
+  border: solid 1px #bbbaba;
   border-radius: 20px 0px 0px 20px;
   font-size: 25px;
   width: 320px;
 }
 #search-profiles button {
   background-color: color4;
-  border: solid 1px color1;
+  border: solid 1px #bbbaba;
   color: color2;
   padding: 10px 30px;
   cursor: pointer;
   margin-left: -5px;
-  transition: -webkit-transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5);
-  transition: transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5);
-  transition: transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
   border-radius: 0px 20px 20px 0px;
   font-size: 25px;
 }
-#search-profiles buttonhover {
-  transition: -webkit-transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5);
-  transition: transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5);
-  transition: transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.2s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+#search-profiles button:hover {
+  transition: -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -42,13 +45,13 @@
   display: none;
   opacity: 0;
   color: color1;
-  background-color: #969696;
-  border: solid 1px color1;
+  background-color: #dcdbdb;
+  border: solid 1px #bbbaba;
   padding: 10px 15px;
   transition: all 1s ease;
   border-radius: 19px;
-  margin-top: 10px;
-  max-width: 530px;
+  max-width: 680px;
+  margin: 10px auto;
 }
 .cont-resultuser p {
   margin-top: 0;
@@ -67,6 +70,7 @@
 .cont-resultuser img {
   width: 29%;
   margin-right: 10px;
+  border-radius: 10px;
 }
 .cont-resultuser .infos-user {
   padding-top: 10px;
@@ -78,16 +82,21 @@
   background-color: color4;
   padding: 8px 15px;
   display: block;
-  max-width: 90px;
+  max-width: 94px;
   text-align: center;
   font-weight: bold;
   margin-top: 15px;
   margin-left: auto;
+  transition: -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
 }
-.repo-list {
-  border: solid 1px color1;
-  padding: 10px;
-  margin-top: 20px;
+.cont-resultuser .infos-user a:hover {
+  transition: -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .order-by {
   text-align: center;
@@ -96,6 +105,7 @@
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  position: relative;
 }
 .order-by a.more-stars::after {
   content: "";
@@ -108,21 +118,61 @@
   position: relative;
   top: 4px;
 }
-.repos .repo-list {
+.repo-list {
+  border: solid 1px #bbbaba;
+  padding: 10px;
+  margin-top: 20px;
   text-align: left;
+  transition: -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
 }
-.repos .repo-list p {
+.repo-list:hover {
+  transition: -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  transition: transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5), -webkit-transform 0.3s cubic-bezier(0.5, 0.49, 0.51, 0.5);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+.repo-list p {
   display: inline;
 }
-.repos .repo-list span {
+.repo-list span {
   display: inline-block;
   width: 120px;
   float: right;
-  margin-top: -4px;
+  margin-top: 0;
   text-align: right;
+}
+.repo-list a {
+  text-decoration: none;
+  color: color1;
+  display: block;
 }
 .search-complete .cont-resultuser {
   display: block;
   opacity: 1;
   transition: all 1s ease;
+}
+@media (max-width: 610px) {
+  #search-profiles input {
+    width: 110px;
+    font-size: 16px;
+    padding: 17px 10px 10px 25px;
+  }
+  #search-profiles button {
+    width: 128px;
+    font-size: 14px;
+    padding: 14.5px 0px;
+    position: relative;
+    top: -4px;
+  }
+  .order-by {
+    margin-top: 30px;
+  }
+  .repo-list p {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 0;
+  }
 }

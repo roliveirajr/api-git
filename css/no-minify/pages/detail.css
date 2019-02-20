@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+p {
+  text-align: center;
+}
+p span {
+  margin: 0 45px;
+}
+.link-to {
+  font-weight: bold;
+}
+.link-to a {
+  font-weight: normal;
+  text-decoration: underline;
+  color: color1;
+}
+.description {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  background: color4;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .stars,
+  .language,
+  .link-to {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}

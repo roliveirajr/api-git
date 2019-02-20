@@ -1,5 +1,5 @@
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   background: #d4d4d4;
@@ -7,6 +7,7 @@ header {
   height: 51px;
   left: 0;
   border-bottom: solid 1px #a2a2a2;
+  z-index: 1;
 }
 header ul {
   list-style-type: none;
@@ -16,4 +17,9 @@ header a {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+}
+@media (max-width: 1024px) {
+  header {
+    padding-left: 20px;
+  }
 }
