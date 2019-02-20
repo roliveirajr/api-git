@@ -29,4 +29,4 @@ Currently supported:
 
 ## Developed and modified by:
 
-- rogerio.oliveira@corebiz.com.br
+- roliveirajr01@gmail.com
