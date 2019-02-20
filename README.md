@@ -25,7 +25,7 @@ Currently supported:
 
 ### Release History
 
-- Feb 09, 2019 - v0.0.1 Create Project
+- Feb 19, 2019 - v0.0.1 Create Project
 
 ## Developed and modified by:
 
